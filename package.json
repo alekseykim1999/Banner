@@ -1,0 +1,11 @@
+{
+  "name": "backendapp",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "node server.js",
+    "client": "cd banner-app && npm start"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
