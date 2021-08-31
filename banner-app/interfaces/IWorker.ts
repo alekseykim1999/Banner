@@ -1,6 +1,7 @@
 export interface IWorkerItem{
     name: string | undefined;
     status: string | undefined;
+    imagePath: string | undefined;
 }
 
 export interface IWorkerAppState{ 

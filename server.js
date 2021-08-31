@@ -16,12 +16,14 @@ app.get('/express_backend', async (req, res) => {
         var y = data.split(/\r?\n/);
         const name="name";
         const status="status";
+        const imgPath="imagePath";
         for(var i = 0; i < y.length ; i++)
         {
           var obj = {};
           var currentWorker = y[i].toString().split("-");
           obj[name] = currentWorker[0];
           obj[status] = currentWorker[1];
+          obj[imgPath] = currentWorker[2];
           arr.push(obj)
         }
 

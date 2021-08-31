@@ -7,6 +7,7 @@ import { IWorkerAppState, IWorkerItem, IWorkerAppProps } from '../interfaces/IWo
 class WorkerItem implements IWorkerItem {
   name: string | undefined;
   status: string | undefined;
+  imagePath: string | undefined;
  
 }
 
@@ -17,9 +18,9 @@ export default class App extends React.Component<IWorkerAppProps, IWorkerAppStat
   constructor(props: IWorkerAppProps) {
     super(props);
 
-    let rssItems: WorkerItem[] = [];
+    let workerItems: WorkerItem[] = [];
     this.state = {
-      workers: rssItems,
+      workers: workerItems,
     }
 
   }
@@ -60,6 +61,7 @@ export default class App extends React.Component<IWorkerAppProps, IWorkerAppStat
                 <br/>
                 <a href="#">{user.status}</a>
                 <br/>
+                <img src={window.location.origin+user.imagePath}/>
               </div>)
           }
 
