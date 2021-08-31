@@ -57,11 +57,11 @@ export default class App extends React.Component<IWorkerAppProps, IWorkerAppStat
         {
             this.state.workers.map(user=>
               <div>
-                <a href="#">{user.name}</a>
+                <a className="Name" href="#">{user.name}</a>
                 <br/>
-                <a href="#">{user.status}</a>
+                <a className="Status" href="#">{user.status}</a>
                 <br/>
-                <img src={window.location.origin+user.imagePath}/>
+                <img className="Image" src={window.location.origin+user.imagePath}/>
               </div>)
           }
 
