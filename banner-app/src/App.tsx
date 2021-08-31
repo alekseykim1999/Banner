@@ -8,6 +8,7 @@ class WorkerItem implements IWorkerItem {
   name: string | undefined;
   status: string | undefined;
   imagePath: string | undefined;
+  icon: string | undefined;
  
 }
 
@@ -55,9 +56,11 @@ export default class App extends React.Component<IWorkerAppProps, IWorkerAppStat
       <div className="App">
         <h3 className="Description">{this.props.description}</h3>
         <div className="Workers">
+        
         {
             this.state.workers.map(user=>
               <div className="WorkerContainer">
+                 <i className={user.icon}>  Наименование награды</i>
                 <a className="Name" href="#">{user.name}</a>
                 <br/>
                 <a className="Status" href="#">{user.status}</a>

@@ -8,6 +8,13 @@
   height:400px;
 }
 
+body i 
+{
+  position:absolute;
+  font-family:'FontAwesome'!important;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
 .Description
 {
