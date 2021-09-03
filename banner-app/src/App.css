@@ -1,27 +1,51 @@
 .App {
-  text-align: center;
-  font-size: calc(10px + 2vmin);
-  background-color: #EEDDFF;
-  border: 6px solid black;
-  border-radius: 25px;
-  width:1400px;
-  height:400px;
+  
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom: 0%;
+
+  background:#FFFFFF;
+  
+  border: 1px solid #D3DAE4;
+  box-sizing: border-box;
+  border-radius: 2px;
+  
+  height: 170px;
+  width: 880px;
+  left: 0px;
+  top: 0px;
+  border-radius: 2px;
+
 }
+
+
+@font-face 
+{
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./fonts/MyFont.woff) format('woff');
+}
+
+
 
 body i 
 {
   position:absolute;
+  display: inline-block;
   font-family:'FontAwesome'!important;
-  font-size: 20px;
+  font-size: 11px;
+  color:#D38235;
+  margin-left: 90px;
   margin-top: 20px;
+
 }
 
 .Description
 {
   text-align: left;
-  color: black;
-  font-family: fangsong;
+  font-family: "MyFont";
   margin-left: 10px;
+  color:#0070C8;
 }
 
 
@@ -37,40 +61,76 @@ body i
   text-align: left;
   width:700px;
   margin-left: 10px;
+  height: 90px;
 
 }
 
 .Name{
-  position:absolute;
-  text-align: left;
-  margin-left: 200px;
-  margin-top:120px;
-  text-overflow: ellipsis;
-  font-weight: 400;
-  font-size: 25px;
-  color: red;
+  height: 20px;
+  width: 170px;
+  border-radius: nullpx;
+  color:black;
+
+  position: absolute;
+  display: inline-block;
+  
+
+  margin-left: 90px;
+  margin-top: 45px;
+
+  font-family: 'MyFont';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
   text-decoration: none;
-  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+
 }
 
 .Status
 {
   position: absolute;
-  text-align: left;
-  margin-left: 200px;
-  margin-top: 130px;
-  text-overflow: ellipsis;
-  font-weight: 300;
-  font-size: 20px;
-  color: green;
+  display: inline-block;
+
+  border-radius: nullpx;
+  color:#626621;
+
+  
+  width:170px;
+  height:20px;
+
+  margin-left: 90px;
+  margin-top: 40px;
+  
+
+  font-family: 'MyFont';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+ 
   text-decoration: none;
-  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
+  flex:none;
+  order:2;
+
+
 }
 
 .Image{
-  width:180px;
-  height:150px;
-  border-radius: 25px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  left: 0px;
+  top: 0px;
+    
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+  margin-left: 10px;
+  margin-top:-25px;
+  
+
 }
 
 

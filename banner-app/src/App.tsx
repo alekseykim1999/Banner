@@ -60,7 +60,7 @@ export default class App extends React.Component<IWorkerAppProps, IWorkerAppStat
         {
             this.state.workers.map(user=>
               <div className="WorkerContainer">
-                 <i className={user.icon}>  Наименование награды</i>
+                <i className={user.icon}>  Наименование награды</i>
                 <a className="Name" href="#">{user.name}</a>
                 <br/>
                 <a className="Status" href="#">{user.status}</a>
